@@ -33,6 +33,7 @@ public class TeamPositionController {
     private void setPostions() {
         for (TeamPosition p : Positions.getPositions()) {
             TeamPosition newPosition = new TeamPosition();
+            newPosition = p;
             teamPositionService.save(newPosition);
         }
     }

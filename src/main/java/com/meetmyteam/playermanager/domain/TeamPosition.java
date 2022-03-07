@@ -10,29 +10,29 @@ public class TeamPosition {
     @Id
     @GeneratedValue
     private Long id;
-    private int number;
     private String name;
     private boolean staff;
+    private int shirt;
 
     public TeamPosition() {
     }
 
-    public TeamPosition(int number, String name, boolean staff) {
-        this.number = number;
+    public TeamPosition(int shirt, String name, boolean staff) {
         this.name = name;
         this.staff = staff;
+        this.shirt = shirt;
     }
 
     public Long getId() {
         return id;
     }
 
-    public int getNumber() {
-        return number;
+    public int getShirt() {
+        return shirt;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    public void setShirt(int shirt) {
+        this.shirt = shirt;
     }
 
     public String getName() {
