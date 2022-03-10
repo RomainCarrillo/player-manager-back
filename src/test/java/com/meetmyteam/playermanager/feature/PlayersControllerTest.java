@@ -38,6 +38,7 @@ class PlayersControllerTest {
 		@Autowired
 		private PlayerController playerController;
 
+
 	  @Test
 		void getAllPlayersTest() throws Exception {
 			playerRepositary.save(new Player());
@@ -51,6 +52,8 @@ class PlayersControllerTest {
 			assertFalse(isEmpty(reponsePlayersList));
 	  }
 	  
+		PlayerController mock = org.mockito.Mockito.mock(PlayerController.class);
+
 		@Test
 		void getPlayerByIdTest() throws Exception {
 			LocalDate birthDate = LocalDate.of(1992, 12, 01);
@@ -58,11 +61,12 @@ class PlayersControllerTest {
 			Player player1 = new Player("Foo", "Bar", birthDate, "http://photo");
 			Player player2 = new Player("Tic", "Toc", birthDate, "http://photo");
 
-			Mockito.when(playerController.getPlayerById(1L)).thenReturn(player1);
-			Mockito.when(playerController.getPlayerById(2L)).thenReturn(player2);
+			Mockito.when(mock.getPlayerById(1L)).thenReturn(player1);
+			Mockito.when(mock.getPlayerById(2L)).thenReturn(player2);
 
-			Player player = playerController.getPlayerById(1L);
+			Player player = mock.getPlayerById(1L);
 
 			assertEquals("Foo", player.getFirstName());
 		}
+
 }
