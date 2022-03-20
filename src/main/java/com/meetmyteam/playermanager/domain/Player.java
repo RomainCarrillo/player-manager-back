@@ -1,9 +1,10 @@
 package com.meetmyteam.playermanager.domain;
 
+import java.time.LocalDate;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import java.util.Date;
 
 @Entity(name = "PLAYER")
 public class Player {
@@ -12,23 +13,31 @@ public class Player {
     private Long id;
     private String firstName;
     private String lastName;
-    private Date birthDate;
+	private LocalDate birthDate;
     private String photoUrl;
 
     public Player() {
     }
 
-    public Player(String firstName, String lastName, Date birthDate) {
+	public Player(String firstName, String lastName, LocalDate birthDate) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthDate = birthDate;
     }
 
-    public Player(String firstName, String lastName, Date birthDate, String photoUrl) {
+	public Player(String firstName, String lastName, LocalDate birthDate, String photoUrl) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthDate = birthDate;
         this.photoUrl = photoUrl;
+	}
+
+	public Player(Long id, String firstName, String lastName, LocalDate birthDate, String photoUrl) {
+        	this.id = id;
+        	this.firstName = firstName;
+        	this.lastName = lastName;
+        	this.birthDate = birthDate;
+        	this.photoUrl = photoUrl;
     }
 
     public Long getId() {
@@ -51,11 +60,11 @@ public class Player {
         this.lastName = lastName;
     }
 
-    public Date getBirthDate() {
+	public LocalDate getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(Date birthDate) {
+	public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
     }
 
