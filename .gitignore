@@ -4,4 +4,4 @@
 *.class
 mvnw.cmd
 mvnw
-/target/
+target/

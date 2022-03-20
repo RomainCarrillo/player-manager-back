@@ -1,10 +1,12 @@
 package com.meetmyteam.playermanager.feature.teampositions;
 
-import com.meetmyteam.playermanager.domain.TeamPosition;
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import com.meetmyteam.playermanager.domain.TeamPosition;
 
 @Service
 public class TeamPositionService {
@@ -24,4 +26,8 @@ public class TeamPositionService {
     public List<TeamPosition> getAll() {
         return teamPositionRepositary.findAll();
     }
+
+	public Optional<TeamPosition> getTeamPositionById(Long id) {
+		return teamPositionRepositary.findById(id);
+	}
 }
