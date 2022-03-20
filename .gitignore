@@ -1,3 +1,7 @@
 /.classpath
 /.project
 /HELP.md
+*.class
+mvnw.cmd
+mvnw
+/target/
