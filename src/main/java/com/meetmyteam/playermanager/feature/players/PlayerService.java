@@ -1,4 +1,4 @@
-package com.meetmyteam.playermanager.feature;
+package com.meetmyteam.playermanager.feature.players;
 
 import com.meetmyteam.playermanager.domain.Player;
 import org.springframework.beans.factory.annotation.Autowired;
