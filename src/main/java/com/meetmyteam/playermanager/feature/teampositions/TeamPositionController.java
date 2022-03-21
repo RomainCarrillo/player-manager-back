@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 import com.meetmyteam.playermanager.domain.TeamPosition;
-import com.meetmyteam.playermanager.ressources.Positions;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
@@ -30,7 +29,6 @@ public class TeamPositionController {
 
     @GetMapping("/positions")
     public List<TeamPosition> getAllPositions() {
-        setPostions();
         return teamPositionService.getAll();
     }
 
@@ -43,15 +41,6 @@ public class TeamPositionController {
 			throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());
 		}
 	}
-
-	// GESTION TEMPORAIRE DES POSTES
-    private void setPostions() {
-        for (TeamPosition p : Positions.getPositions()) {
-            TeamPosition newPosition = new TeamPosition();
-            newPosition = p;
-            teamPositionService.save(newPosition);
-        }
-    }
 
 
 }
