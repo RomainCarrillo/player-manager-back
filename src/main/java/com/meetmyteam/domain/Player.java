@@ -1,4 +1,4 @@
-package com.meetmyteam.playermanager.domain;
+package com.meetmyteam.domain;
 
 import java.time.LocalDate;
 

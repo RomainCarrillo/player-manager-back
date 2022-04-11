@@ -1,4 +1,4 @@
-package com.meetmyteam.playermanager.feature.teampositions;
+package com.meetmyteam.feature.teampositions;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.meetmyteam.playermanager.domain.TeamPosition;
+import com.meetmyteam.domain.TeamPosition;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")

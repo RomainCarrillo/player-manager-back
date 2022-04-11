@@ -1,4 +1,4 @@
-package com.meetmyteam.playermanager.domain;
+package com.meetmyteam.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

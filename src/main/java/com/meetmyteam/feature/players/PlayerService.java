@@ -1,8 +1,9 @@
-package com.meetmyteam.playermanager.feature.players;
+package com.meetmyteam.feature.players;
 
-import com.meetmyteam.playermanager.domain.Player;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.meetmyteam.domain.Player;
 
 import java.util.List;
 import java.util.Optional;
@@ -11,7 +12,7 @@ import java.util.Optional;
 public class PlayerService {
 
     @Autowired
-    public PlayerRepositary playerRepositary;
+    public PlayerRepository playerRepositary;
 
     public Player getPlayerById(Long id) throws Exception {
         return playerRepositary.findById(id).orElseThrow(Exception::new);
