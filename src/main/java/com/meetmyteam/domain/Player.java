@@ -7,10 +7,16 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.Setter;
+
 @Entity(name = "PLAYER")
+@Getter @Setter
 public class Player {
     @Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+    @Setter(AccessLevel.PROTECTED)
     private Long id;
     private String firstName;
     private String lastName;
@@ -41,39 +47,4 @@ public class Player {
         	this.photoUrl = photoUrl;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-	public LocalDate getBirthDate() {
-        return birthDate;
-    }
-
-	public void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
-    }
-
-    public String getPhotoUrl() {
-        return photoUrl;
-    }
-
-    public void setPhotoUrl(String photoUrl) {
-        this.photoUrl = photoUrl;
-    }
 }

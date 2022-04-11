@@ -30,7 +30,7 @@ public class PlayerController {
 
     @GetMapping("/players")
     public List<Player> getPlayers() {
-        return playerService.getList();
+        return playerService.getAllPlayers();
     }
 
     @GetMapping("/players/{id}")

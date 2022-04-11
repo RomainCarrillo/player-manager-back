@@ -18,7 +18,7 @@ public class PlayerService {
         return playerRepositary.findById(id).orElseThrow(Exception::new);
     }
 
-    public List<Player> getList() {
+    public List<Player> getAllPlayers() {
         return playerRepositary.findAll();
     }
 

@@ -6,6 +6,4 @@ import org.springframework.stereotype.Repository;
 import com.meetmyteam.domain.Opponent;
 
 @Repository
-public interface OpponentRepository extends JpaRepository<Opponent, Long> {
-
-}
+public interface OpponentRepository extends JpaRepository<Opponent, Long> {}
