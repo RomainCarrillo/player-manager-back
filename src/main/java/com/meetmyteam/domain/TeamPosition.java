@@ -5,7 +5,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import lombok.Getter;
+import lombok.Setter;
+
 @Entity(name = "TEAMPOSITION")
+@Getter @Setter
 public class TeamPosition {
 
     @Id
@@ -24,31 +28,4 @@ public class TeamPosition {
         this.shirt = shirt;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public int getShirt() {
-        return shirt;
-    }
-
-    public void setShirt(int shirt) {
-        this.shirt = shirt;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public boolean isStaff() {
-        return staff;
-    }
-
-    public void setStaff(boolean staff) {
-        this.staff = staff;
-    }
 }

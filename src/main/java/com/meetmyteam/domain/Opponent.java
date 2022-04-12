@@ -17,7 +17,7 @@ public class Opponent {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Setter(AccessLevel.PROTECTED)
-	private String id;
+	private Long id;
 	private String clubName;
 	private String city;
 	private String logoUrl;
