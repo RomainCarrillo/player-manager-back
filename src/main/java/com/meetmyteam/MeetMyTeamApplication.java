@@ -1,13 +1,13 @@
-package com.meetmyteam.playermanager;
+package com.meetmyteam;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PlayerManagerApplication {
+public class MeetMyTeamApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(PlayerManagerApplication.class, args);
+        SpringApplication.run(MeetMyTeamApplication.class, args);
     }
 
 }

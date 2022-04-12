@@ -21,9 +21,9 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.meetmyteam.playermanager.domain.Player;
-import com.meetmyteam.playermanager.feature.players.PlayerController;
-import com.meetmyteam.playermanager.feature.players.PlayerRepositary;
+import com.meetmyteam.domain.Player;
+import com.meetmyteam.feature.players.PlayerController;
+import com.meetmyteam.feature.players.PlayerRepository;
 
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -33,7 +33,7 @@ class PlayersControllerTest {
 	    private MockMvc mvc;
 
 	    @Autowired
-		private PlayerRepositary playerRepositary;
+		private PlayerRepository playerRepositary;
 	    
 		@Autowired
 		private PlayerController playerController;
