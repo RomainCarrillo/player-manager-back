@@ -1,12 +1,12 @@
 package com.meetmyteam.feature.players;
 
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.meetmyteam.domain.Player;
-
-import java.util.List;
-import java.util.Optional;
 
 @Service
 public class PlayerService {
@@ -33,7 +33,7 @@ public class PlayerService {
             modifiedPlayer.setFirstName(player.getFirstName());
             modifiedPlayer.setLastName(player.getLastName());
             modifiedPlayer.setBirthDate(player.getBirthDate());
-            modifiedPlayer.setPhotoUrl(player.getPhotoUrl());
+            modifiedPlayer.setPlayerPic(player.getPlayerPic());
             playerRepositary.save(modifiedPlayer);
         }
     }

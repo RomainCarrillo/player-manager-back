@@ -59,3 +59,7 @@ public class PlayerController {
     }
 
 }
+
+/*
+ * https://www.techgeeknext.com/angular-upload-image-spring-boot-example
+ */

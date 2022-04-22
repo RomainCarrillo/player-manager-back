@@ -21,7 +21,7 @@ public class Player {
     private String firstName;
     private String lastName;
 	private LocalDate birthDate;
-    private String photoUrl;
+    private Byte[] playerPic;
 
     public Player() {
     }
@@ -32,19 +32,19 @@ public class Player {
         this.birthDate = birthDate;
     }
 
-	public Player(String firstName, String lastName, LocalDate birthDate, String photoUrl) {
+	public Player(String firstName, String lastName, LocalDate birthDate, Byte[] playerPic) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthDate = birthDate;
-        this.photoUrl = photoUrl;
+        this.playerPic = playerPic;
 	}
 
-	public Player(Long id, String firstName, String lastName, LocalDate birthDate, String photoUrl) {
+	public Player(Long id, String firstName, String lastName, LocalDate birthDate, Byte[] playerPic) {
         	this.id = id;
         	this.firstName = firstName;
         	this.lastName = lastName;
         	this.birthDate = birthDate;
-        	this.photoUrl = photoUrl;
+        	this.playerPic = playerPic;
     }
 
 }
