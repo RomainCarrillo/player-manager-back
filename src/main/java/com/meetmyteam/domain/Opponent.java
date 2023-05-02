@@ -6,12 +6,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
 import lombok.Setter;
 
 @Entity(name = "OPPONENT")
-@Getter @Setter @NoArgsConstructor
+@Data
+@Builder
 public class Opponent {
 	
 	@Id
@@ -21,12 +22,5 @@ public class Opponent {
 	private String clubName;
 	private String city;
 	private String logoUrl;
-	
-	public Opponent(String clubName, String city, String logoUrl) {
-		this.clubName = clubName;
-		this.city = city;
-		this.logoUrl = logoUrl;
-	}
-	
 	
 }
