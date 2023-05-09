@@ -1,4 +1,4 @@
-package com.meetmyteam.feature.players;
+package com.meetmyteam.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

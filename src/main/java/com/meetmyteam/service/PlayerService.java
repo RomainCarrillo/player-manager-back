@@ -1,9 +1,10 @@
-package com.meetmyteam.feature.players;
+package com.meetmyteam.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.meetmyteam.domain.Player;
+import com.meetmyteam.repository.PlayerRepository;
 
 import java.util.List;
 import java.util.Optional;

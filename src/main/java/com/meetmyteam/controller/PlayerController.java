@@ -1,4 +1,4 @@
-package com.meetmyteam.feature.players;
+package com.meetmyteam.controller;
 
 import java.util.List;
 
@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 import com.meetmyteam.domain.Player;
+import com.meetmyteam.service.PlayerService;
+
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
