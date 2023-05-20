@@ -1,4 +1,4 @@
-package com.meetmyteam.feature.teampositions;
+package com.meetmyteam.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -14,8 +14,10 @@ import org.springframework.web.server.ResponseStatusException;
 
 import com.meetmyteam.domain.TeamPosition;
 
+import com.meetmyteam.service.TeamPositionService;
+
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
 public class TeamPositionController {
 
     private final TeamPositionService teamPositionService;

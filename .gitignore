@@ -7,3 +7,7 @@ mvnw
 target/
 .mvnw
 .metadata
+.vscode/launch.json
+data/
+.vscode/
+config/
