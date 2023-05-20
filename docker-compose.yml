@@ -25,12 +25,12 @@ services:
       - "./config/my.conf:/etc/mysql/conf.d/config-file.cnf"
       - "./data:/var/lib/mysql:rw"
 
-  api:
+  player-manager:
     image: player-manager-api
     ports:
-      - 8091:8091
+      - 8080:8080
     environment:
-      - spring.datasource.url=jdbc:mysql://db:3306/testdatabase
+      - spring.datasource.url=jdbc:mysql://db:3306/testdatabase?createDatabaseIfNotExist=true
       - spring.datasource.driver-class-name=com.mysql.jdbc.Driver
       - spring.datasource.username=testuser
       - spring.datasource.password=Sc00b!d00

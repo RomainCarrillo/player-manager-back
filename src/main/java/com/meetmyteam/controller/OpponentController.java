@@ -20,7 +20,7 @@ import com.meetmyteam.domain.Opponent;
 import com.meetmyteam.service.OpponentService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
 public class OpponentController {
 
 	private final OpponentService opponentService;

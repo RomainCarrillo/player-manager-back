@@ -20,7 +20,7 @@ import com.meetmyteam.service.PlayerService;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
 public class PlayerController {
 
     private final PlayerService playerService;

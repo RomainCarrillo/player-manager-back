@@ -17,7 +17,7 @@ import com.meetmyteam.domain.TeamPosition;
 import com.meetmyteam.service.TeamPositionService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
 public class TeamPositionController {
 
     private final TeamPositionService teamPositionService;
